@@ -1,0 +1,58 @@
+
+:root{
+  --primary : rgb(38, 185, 253);
+  --secondary  : white;
+  --tertiary : rgb(178, 179, 120);
+}
+*{
+  margin : 0;
+  padding :0;
+  box-sizing :border-box
+} body{
+  width :100vw;
+  height: 100vh;
+  display : flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}#app{
+  display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color : var(--primary);
+    padding : 40px;
+    border-radius: 20px;
+    color : white;
+    min-width : 60vw;
+}
+#app h4{
+  font-size : 2.2rem;
+}#app div  { 
+  display :flex;
+  flex-direction: column;
+  gap : 10px;
+  align-items :start;
+  
+}#app div span {
+  padding :10px;
+  border :1px solid black;
+  min-width : 35vw;
+  user-select :none;
+  background-color :white;
+  color : black;
+  border-radius : 3px;
+}#app button { 
+  align-self :end;
+  padding :10px;
+  font-size:  1.2rem;
+  outline:none;
+  border-radius : 3px;
+  color :var(--secondary);
+  background-color : var(--tertiary)
+}.right {
+  background-color : green;
+}.wrong { 
+  background-color:  red;
+}
